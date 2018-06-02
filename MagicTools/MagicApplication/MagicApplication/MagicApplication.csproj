@@ -58,6 +58,7 @@
     <Compile Include="SourceCode\SC_Product\HAL_Processors\UART_component\CUartComponent.cs" />
     <Compile Include="SourceCode\SC_Product\HAL_Processors\UART_component\IUartComponent.cs" />
     <Compile Include="SourceCode\SC_Product\CSystemDirector.cs" />
+    <Compile Include="SourceCode\SC_Utilities\SUltilitiesFunc.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -87,7 +88,6 @@
     <Folder Include="ResourceFiles\" />
     <Folder Include="SourceCode\SC_Framwork\" />
     <Folder Include="SourceCode\SC_Product\Factories\" />
-    <Folder Include="SourceCode\SC_Utilities\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
