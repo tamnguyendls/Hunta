@@ -20,6 +20,8 @@ namespace MagicApplication.SourceCode.SC_Product.HAL_Processors.UART_component
         _9b = 9,
     }
 
+    public delegate void DataReceivedUpdate(string sData);
+
     public struct SERIAL_PROPERTIES_T
     {
         public string portName;
@@ -39,5 +41,6 @@ namespace MagicApplication.SourceCode.SC_Product.HAL_Processors.UART_component
         List<SERIAL_PROPERTIES_T> GetDeviceList();
         bool Write(string sData);
         string Read();
+        void RegisterDataReceivedUpdate(DataReceivedUpdate ReceiveHandler);
     }
 }
